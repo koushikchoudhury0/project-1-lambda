@@ -1,0 +1,14 @@
+{
+  "name": "hq-authenticate-password",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "export DEPLOYMENT=LOCAL JWT_SECRET=Y72GH3S9a65Fqu6YqRXTNUX2YgA93pVCkyaSrSDb REDIS_HOST=us1-internal-tortoise-30836.lambda.store REDIS_PORT=30836 REDIS_PASSWORD=f92c643cff9e47f4a05cd21ce7f8f0ba MYSQL_HOST=localhost DB_USERNAME=root DB_PASSWORD=ThisisallM! && npm link aws-sdk && lambda-local -l index.js -e event.js && npm unlink aws-sdk"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuidv4": "^6.2.2"
+  }
+}

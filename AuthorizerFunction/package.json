@@ -1,0 +1,16 @@
+{
+  "name": "authorizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "export JWT_SECRET=auvwQmuhquFQpTEwUrs8fPKxDZ9JZWMreat83uem REDIS_HOST=us1-internal-tortoise-30836.lambda.store REDIS_PORT=30836 REDIS_PASSWORD=f92c643cff9e47f4a05cd21ce7f8f0ba && lambda-local -l index.js -e event.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
