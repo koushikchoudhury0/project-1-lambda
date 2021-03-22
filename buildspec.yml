@@ -5,13 +5,13 @@ phases:
       nodejs: 14.x
   pre_build:
     commands:
-      - echo Build Started on `date`      
+      - echo Build Started on `date` from Github    
   build:
     commands:      
       - echo Compiling
   post_build:
     commands:
-      - echo Build Completed on `date`      
+      - echo Build Completed on `date` from Github       
 artifacts:
   files:
     - "**/*"
